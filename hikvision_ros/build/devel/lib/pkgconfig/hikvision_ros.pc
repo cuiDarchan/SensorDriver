@@ -1,0 +1,8 @@
+prefix=/home/cui/workspace/livox_ws/src/hikvision_ros/build/devel
+
+Name: hikvision_ros
+Description: Description of hikvision_ros
+Version: 0.0.1
+Cflags: -I/home/cui/workspace/livox_ws/src/hikvision_ros/include
+Libs: -L${prefix}/lib 
+Requires: 

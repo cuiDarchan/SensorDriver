@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/cui/workspace/livox_ws/src/hikvision_ros/build/devel/setup.sh

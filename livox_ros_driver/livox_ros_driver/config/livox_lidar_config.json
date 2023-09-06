@@ -1,0 +1,34 @@
+{
+    "lidar_config": [
+        {
+            "broadcast_code": "1PQDL4J00170311",
+            "enable_connect": true,
+            "return_mode": 0,
+            "coordinate": 0,
+            "imu_rate": 1,
+            "extrinsic_parameter_source": 0,
+            "enable_high_sensitivity": false,
+            "lidar_topic": "/livox/tele15",
+            "imu_topic": "/livox/tele15/imu"
+        },
+        {
+            "broadcast_code": "3JEDL5V001KW141",
+            "enable_connect": true,
+            "return_mode": 0,
+            "coordinate": 0,
+            "imu_rate": 1,
+            "extrinsic_parameter_source": 0,
+            "enable_high_sensitivity": false,
+            "lidar_topic": "/livox/avia",
+            "imu_topic": "/livox/avia/imu"
+        }
+    ],
+	
+    "timesync_config": {
+        "enable_timesync": false,
+        "device_name": "/dev/ttyUSB0",
+        "comm_device_type": 0,
+        "baudrate_index": 2,
+        "parity_index": 0     
+    }
+}

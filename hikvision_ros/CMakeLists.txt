@@ -10,7 +10,8 @@ find_package(catkin REQUIRED COMPONENTS
   camera_info_manager
 )
 
-find_package(OpenCV 4 REQUIRED)
+#find_package(OpenCV 4 REQUIRED)
+find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDES})
 
 find_package(Boost REQUIRED)

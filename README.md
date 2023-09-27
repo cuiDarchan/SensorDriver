@@ -15,6 +15,7 @@
 ## 3. hikrobot_camera
 海康机器人的相机驱动ROS版本，基于官方的SDK开发的。  
 1）临时去掉一些无法编译通过的链接库。  
+2）需要[参考](https://blog.csdn.net/weixin_41965898/article/details/116801491)安装MVS工具，否则
 *注意：* 海康威视与海康机器人工业相机是有区别的，请拿到设备后注意甄别型号
 
 # 使用教程
@@ -25,5 +26,6 @@ cd sensor_driver_ws
 mkdir -p src
 cd src
 git clone xx.git
-catkin_make
+catkin_make -DCATKIN_WHITELIST_PACKAGES="livox_ros_driver;hikvision_ros" # 只编译臂头感知项目所需的安装包
 ```
+注意： 只使用catkin_make 会默认安装hikrobot_camera，可能回报头文件错误，因没有安装MVS工具
